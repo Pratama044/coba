@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 300px;
+    background-image: url('3.jpg');
+    background-size: cover;
+}
+.top{
+
+}
+header h1{
+    position: relative;
+    display: inline-flex;
+    margin: 40px;
+    margin-top: 110px;
+    text-align: center;
+    color: aliceblue;
+
+
+}
+nav{
+    border: 1px solid;
+}
+.menu{
+    background-color: rgb(73, 84, 235);
+    height: 40px;
+}
+.menu h2{
+    position: relative;
+    display: inline-block;
+    font-family: cursive;
+    margin-left: 10px;
+    color: white;
+    
+}
+h2 span{
+    color: red;
+}
+.menu-bar{
+    display: inline-flex;
+    float: right;
+    margin-top: 10px;
+    margin-right: 5px;
+
+}
+input[type="checkbox"]{
+    position: relative;
+    width: 40px;
+    height: 20px;
+    appearance: none;
+    background-color: rgb(212, 212, 212);
+    outline: none;
+    border-radius: 10px;
+    transition: .5s ease;
+    cursor: pointer;
+    margin-right: 5px;
+}
+input[type="checkbox"]:checked{
+    background-color: #000000;
+}
+input[type="checkbox"]::before{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: .5s ease;
+
+}
+input[type="checkbox"]:checked::before{
+    transform: translateX(20px);
+    transition: .5s ease;
+}
+.dark{
+    background-color: black;
+    color: white;
+}
+/* categoris */
+.dropbtn{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    /* box-shadow: 0px 8px 16px 0px black; */
+    z-index: 1;
+    width: 30px;
+}
+.dropdown-content a{
+    text-align: start;
+    color: #000000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: .3s;
+}
+.dropdown-content a:hover{
+    background-color: rgb(69, 68, 68);
+    color: #ffffff;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+.dropdown:hover .dropbtn{
+    background-color: #26292d;
+    color: white;
+    transition: .3s;
+}
+/* menu search */
+nav .search-container{
+    float: right;
+}
+nav input[type=text]{
+    font-size: 17px;
+    border: none;
+}
+nav .search .search-container button{
+    float: right;
+    padding: 6px 10px;
+    margin-right: 16px;
+    background: rgb(0, 0, 0);
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+.topnav .search .search-container button:hover{
+    background: #ccc;
+}
+/* sidebar */
+.sidenav{
+    margin-top: 10px;
+    height: fit-content;
+    width: 100%;
+    position: static;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(17, 17, 17, 0.932);
+    /* overflow: hidden; */
+    transition: .4s;
+    padding-top: 60px;
+    display: none;
+}
+.sidenav a{
+    /* padding: 8px 8px 8px 32px; */
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: .3s;
+    position: relative;
+    margin-left: 5px;
+    border-bottom: 0.5px solid white;
+    
+}
+.sidenav a:hover{
+    color: #ffffff;
+    background-color: rgb(51, 189, 235);
+}
+
+.burger span{
+    position: relative;
+    margin-left: 5px;
+    bottom: 12px;
+    
+}
